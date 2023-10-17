@@ -1,12 +1,29 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
+import toast from "react-hot-toast";
 
 const NavBar = () => {
+  const { users, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+    .then(() => {
+        toast.success('Logged Out Successful')
+    })
+    .catch(err => {
+        toast.error(err.message)
+    })
+  }
   const navLinks = (
     <>
       <NavLink
         to="/"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active underline text-red-600 font-bold" : ""
+          isPending
+            ? "pending"
+            : isActive
+            ? "active underline text-red-600 font-bold"
+            : ""
         }
       >
         Home
@@ -14,7 +31,11 @@ const NavBar = () => {
       <NavLink
         to="/addproduct"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active underline text-red-600 font-bold" : ""
+          isPending
+            ? "pending"
+            : isActive
+            ? "active underline text-red-600 font-bold"
+            : ""
         }
       >
         Add Product
@@ -22,7 +43,11 @@ const NavBar = () => {
       <NavLink
         to="/mycart"
         className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active underline text-red-600 font-bold" : ""
+          isPending
+            ? "pending"
+            : isActive
+            ? "active underline text-red-600 font-bold"
+            : ""
         }
       >
         My Cart
@@ -57,17 +82,43 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex">
-        <a href=""><img className="w-12 h-12 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkMeWzy8mvFuquASe38AkbW2pqTbhcc0jYBELflWjv_Q&s" alt="" /></a>
-        <a className="btn btn-ghost normal-case text-xl">Shopify</a>
+          <a href="">
+            <img
+              className="w-12 h-12 rounded-full"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkMeWzy8mvFuquASe38AkbW2pqTbhcc0jYBELflWjv_Q&s"
+              alt=""
+            />
+          </a>
+          <a className="btn btn-ghost normal-case text-xl">Shopify</a>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-5">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <Link to={'/login'}>
-        <button className="btn">Log In</button>
-        </Link>
+        {users ? (
+          <div>
+            <div className="dropdown dropdown-bottom dropdown-end">
+            <img src={users.photoURL}  tabIndex={0} className="h-14 w-15 rounded-full" alt={users.displayName} />
+              
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-[50] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <button>{users.displayName}</button>
+                </li>
+                <li>
+                  <button onClick={handleLogOut}>Log Out</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <Link to={"/login"}>
+            <button className="btn">Log In</button>
+          </Link>
+        )}
       </div>
     </div>
   );

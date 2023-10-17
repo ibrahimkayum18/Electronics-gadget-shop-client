@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
+import { updateProfile } from "firebase/auth";
+import auth from "../../firebase.config";
+import toast from "react-hot-toast";
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
@@ -13,20 +16,26 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        const appliedUser = {
-            name, 
-            photo,
-            email,
-            password
-        }
+        // const appliedUser = {
+        //     name, 
+        //     photo,
+        //     email,
+        //     password
+        // }
         createUser(email, password)
         .then(res => {
-            console.log(res.user);
-
-            navigate('/login')
+            console.log( 'logged user', res.user);
+            updateProfile(auth.currentUser, {
+                displayName: name,
+                photoURL: photo
+              })
+              .then(() => {
+                toast.success('User Created successfully')
+                navigate('/login')
+              })
         })
         .catch(error => {
-            console.log(error);
+            toast.error(error.message);
         })
     }
   return (
@@ -44,7 +53,6 @@ const Register = () => {
               required
               placeholder="Your name..."
               className="w-full rounded-lg py-3 bg-gray-300 px-5"
-              id=""
             />
           </div>
           <div>
@@ -55,7 +63,6 @@ const Register = () => {
               required
               placeholder="Your Photo URL..."
               className="w-full rounded-lg py-3 bg-gray-300 px-5"
-              id=""
             />
           </div>
           <div>
@@ -66,7 +73,6 @@ const Register = () => {
               required
               placeholder="Your Email..."
               className="w-full rounded-lg py-3 bg-gray-300 px-5"
-              id=""
             />
           </div>
           <div>
@@ -77,7 +83,6 @@ const Register = () => {
               required
               placeholder="Your Password..."
               className="w-full rounded-lg py-3 bg-gray-300 px-5"
-              id=""
             />
           </div>
           <div>
