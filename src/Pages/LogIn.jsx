@@ -22,21 +22,21 @@ const LogIn = () => {
             navigate(location.state ? location.state : '/')
         })
         .catch(error => {
-            toast.error(error);
+            toast.error(error.message);
         })
     }
     const handleGoogleLogIn = () => {
         googleLogIn()
-        .then(res => {
-            console.log(res.user);
+        .then(() => {
+            toast.success('User Logged In Successfully');
         })
         .catch(error => {
-            console.log(error);
+            toast.error(error.message);
         })
     }
   return (
-    <div className="pt-5  md:pt-8  lg:pt-14 pb-5  md:pb-8  lg:pb-14  bg-gray-200">
-      <div className="space-y-7 w-[90%] md:w-[70%] lg:w-[40%] mx-auto bg-white p-10 rounded-lg">
+    <div className="pt-5  md:pt-8  lg:pt-14 pb-5  md:pb-8  lg:pb-14  bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+      <div className="space-y-7 w-[90%] md:w-[70%] lg:w-[40%] mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10 rounded-lg">
         <h2 className="text-5xl text-center font-bold mb-10">Please Log In</h2>
         <form onSubmit={handleLogIn} className="space-y-7">
           <input
@@ -55,16 +55,16 @@ const LogIn = () => {
           <br />
           <div>
               <button
-                className="py-3 w-full rounded-lg bg-blue-600 text-xl font-bold text-white"
+                className="py-3 w-full rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-xl font-bold text-white"
                 type="submit"
               >
                 Log In
               </button>
-            <p className="mt-5">New To ShopiFy? Please <Link className="text-blue-600 font-bold underline" to={'/register'}>Register</Link> </p>
+            <p className="mt-5">New To ShopiFy? Please <Link className="text-white font-bold underline" to={'/register'}>Register</Link> </p>
             
           </div>
           <div className="text-center">
-          <button onClick={handleGoogleLogIn} className=" text-2xl font-bold border-2 border-orange-400 text-orange-500 w-full rounded-lg"><img className="h-14  mx-auto " src="https://i.ibb.co/xg1JH1Q/download.png" alt="" /></button>
+          <button onClick={handleGoogleLogIn} className=" text-2xl font-bold  text-orange-500  rounded-lg"><img className="h-14  mx-auto rounded-xl" src="https://i.ibb.co/xg1JH1Q/download.png" alt="" /></button>
           </div>
         </form>
       </div>

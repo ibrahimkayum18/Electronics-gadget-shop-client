@@ -6,7 +6,7 @@ import auth from "../../firebase.config";
 import toast from "react-hot-toast";
 
 const Register = () => {
-    const {createUser} = useContext(AuthContext);
+    const {createUser, logOut} = useContext(AuthContext);
     const navigate = useNavigate()
 
     const handleRegister = e => {
@@ -23,14 +23,14 @@ const Register = () => {
         //     password
         // }
         createUser(email, password)
-        .then(res => {
-            console.log( 'logged user', res.user);
+        .then(() => {
             updateProfile(auth.currentUser, {
                 displayName: name,
                 photoURL: photo
               })
               .then(() => {
                 toast.success('User Created successfully')
+                logOut()
                 navigate('/login')
               })
         })
@@ -39,8 +39,8 @@ const Register = () => {
         })
     }
   return (
-    <div className="pt-5  md:pt-8  lg:pt-14 pb-5  md:pb-8  lg:pb-14  bg-gray-200">
-      <div className="space-y-7 w-[90%] md:w-[70%] lg:w-[50%] mx-auto bg-white p-10 rounded-lg">
+    <div className="pt-5  md:pt-8  lg:pt-14 pb-5  md:pb-8  lg:pb-14 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+      <div className="space-y-7 w-[90%] md:w-[70%] lg:w-[50%] mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10 rounded-lg">
         <h2 className="text-5xl text-center font-bold mb-10">
           Please Register
         </h2>
