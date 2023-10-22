@@ -1,0 +1,27 @@
+[
+    {
+      "brand": "Apple",
+      "brand_image": "https://i.ibb.co/rmCq61x/download.png"
+    },
+    {
+      "brand": "Samsung",
+      "brand_image": "https://i.ibb.co/68HhQ3M/download-1.png"
+    },
+    {
+      "brand": "Lenovo",
+      "brand_image": "https://i.ibb.co/Lks6M7X/l.png"
+    },
+    {
+      "brand": "HTC",
+      "brand_image": "https://i.ibb.co/v1KxbsP/htc.png"
+    },
+    {
+      "brand": "Google",
+      "brand_image": "https://i.ibb.co/7R4gpH3/g.png"
+    },
+    {
+      "brand": "Microsoft",
+      "brand_image": "https://i.ibb.co/RvBFs3D/mi.png"
+    }
+  ]
+  

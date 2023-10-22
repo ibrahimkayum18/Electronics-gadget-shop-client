@@ -7,6 +7,9 @@ import MyCart from "../Pages/MyCart";
 import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
 import PrivetRouter from "../Providers/PrivetRouter";
+import Products from "../Pages/Products";
+import SeeMore from "../Components/SeeMore";
+import Update from "../Pages/Update";
 
 
 const Route = createBrowserRouter([
@@ -17,7 +20,8 @@ const Route = createBrowserRouter([
         children: [
             {
                 path:'/',
-                element:<Home></Home>
+                element:<Home></Home>,
+                loader: () => fetch("http://localhost:5000/shopifyProducts")
             },
             {
                 path:'/addproduct',
@@ -34,7 +38,22 @@ const Route = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            }
+            },
+            {
+                path: '/products/:brand',
+                element: <Products></Products>,
+                loader: () => fetch('http://localhost:5000/shopifyProducts#')
+            },
+            {
+                path: '/seemore/:id',
+                element: <SeeMore></SeeMore>,
+                loader: () => fetch('http://localhost:5000/shopifyProducts#')
+            },
+            {
+                path: '/update/:id',
+                element: <Update></Update>,
+                loader: () => fetch('http://localhost:5000/shopifyProducts#')
+            },
         ]
     }
 ])

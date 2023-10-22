@@ -1,0 +1,166 @@
+ [
+      {
+        "name": "iPhone 13",
+        "brand": "Apple",
+        "photo": "https://i.ibb.co/RQRKHgp/i13.jpg",
+        "p_type": "Technology and Electronics",
+        "price": "999.99",
+        "rating": "4.5",
+        "p_description": "The latest iPhone from Apple."
+      },
+      {
+        "name": "MacBook Air",
+        "brand": "Apple",
+        "photo": "https://i.ibb.co/WDdgH53/mac.jpg",
+        "p_type": "Technology and Electronics",
+        "price": "1299.99",
+        "rating": "4.6",
+        "p_description": "A lightweight and portable laptop."
+      },
+      {
+        "name": "Apple Watch Series 7",
+        "brand": "Apple",
+        "photo": "https://i.ibb.co/7SZCBX2/aw.jpg",
+        "p_type": "Wearable Technology",
+        "price": "399.99",
+        "rating": "4.7",
+        "p_description": "The latest smartwatch from Apple."
+      },
+      {
+        "name": "Galaxy S21",
+        "brand": "Samsung",
+        "photo": "https://i.ibb.co/1dqt9vw/s21.jpg",
+        "p_type": "Technology and Electronics",
+        "price": "899.99",
+        "rating": "4.4",
+        "p_description": "Samsung's flagship smartphone."
+      },
+      {
+        "name": "Samsung Galaxy Tab S7",
+        "brand": "Samsung",
+        "photo": "https://i.ibb.co/hmnbGbS/st.jpg",
+        "p_type": "Tablet",
+        "price": "649.99",
+        "rating": "4.3",
+        "p_description": "A powerful Android tablet."
+      },
+      {
+        "name": "Samsung QLED 4K TV",
+        "brand": "Samsung",
+        "photo": "https://i.ibb.co/2qmRXQ9/stv.jpg",
+        "p_type": "Television",
+        "price": "1499.99",
+        "rating": "4.8",
+        "p_description": "High-quality 4K TV from Samsung."
+      },
+      {
+        "name": "ThinkPad X1 Carbon",
+        "brand": "Lenovo",
+        "photo": "https://i.ibb.co/t8WWP9r/lt.jpg",
+        "p_type": "Technology and Electronics",
+        "price": "1499.99",
+        "rating": "4.5",
+        "p_description": "Lenovo's premium laptop."
+      },
+      {
+        "name": "Yoga C930",
+        "brand": "Lenovo",
+        "photo": "https://i.ibb.co/tbGqGHQ/ly.jpg",
+        "p_type": "Technology and Electronics",
+        "price": "999.99",
+        "rating": "4.3",
+        "p_description": "A versatile 2-in-1 laptop."
+      },
+      {
+        "name": "Lenovo Legion Y740",
+        "brand": "Lenovo",
+        "photo": "https://i.ibb.co/GPbWwcr/lf.jpg",
+        "p_type": "Gaming Laptop",
+        "price": "1199.99",
+        "rating": "4.6",
+        "p_description": "Powerful gaming laptop from Lenovo."
+      },
+      {
+        "name": "HTC U12+",
+        "brand": "HTC",
+        "photo": "https://i.ibb.co/d5LJXN1/htc1.jpg",
+        "p_type": "Smartphone",
+        "price": "599.99",
+        "rating": "4.2",
+        "p_description": "HTC's flagship smartphone."
+      },
+      {
+        "name": "HTC Vive Pro",
+        "brand": "HTC",
+        "photo": "https://i.ibb.co/LRwD18L/zdrag.jpg",
+        "p_type": "Virtual Reality",
+        "price": "799.99",
+        "rating": "4.5",
+        "p_description": "High-quality VR headset from HTC."
+      },
+      {
+        "name": "HTC One M9",
+        "brand": "HTC",
+        "photo": "https://i.ibb.co/nMdXtZR/zrga.jpg",
+        "p_type": "Technology and Electronics",
+        "price": "299.99",
+        "rating": "4.0",
+        "p_description": "A budget-friendly HTC smartphone."
+      },
+      {
+        "name": "Google Pixel 6",
+        "brand": "Google",
+        "photo": "https://i.ibb.co/qMtkYF3/gp.jpg",
+        "p_type": "Smartphone",
+        "price": "799.99",
+        "rating": "4.6",
+        "p_description": "Google's latest Pixel phone."
+      },
+      {
+        "name": "Google Nest Hub",
+        "brand": "Google",
+        "photo": "https://i.ibb.co/T0R4pSH/gg.jpg",
+        "p_type": "Smart Home",
+        "price": "129.99",
+        "rating": "4.4",
+        "p_description": "A smart display for your home."
+      },
+      {
+        "name": "Chromebook Pixel",
+        "brand": "Google",
+        "photo": "https://i.ibb.co/gjY7nY5/download.jpg",
+        "p_type": "Laptop",
+        "price": "799.99",
+        "rating": "4.2",
+        "p_description": "Google's premium Chromebook."
+      },
+      {
+        "name": "Surface Pro 7",
+        "brand": "Microsoft",
+        "photo": "https://i.ibb.co/rHPn3fN/download-1.jpg",
+        "p_type": "Tablet",
+        "price": "899.99",
+        "rating": "4.4",
+        "p_description": "Versatile 2-in-1 tablet from Microsoft."
+      },
+      {
+        "name": "Xbox Series X",
+        "brand": "Microsoft",
+        "photo": "https://i.ibb.co/J7Fs2Qs/download-2.jpg",
+        "p_type": "Gaming Console",
+        "price": "499.99",
+        "rating": "4.7",
+        "p_description": "Microsoft's next-gen gaming console."
+      },
+      {
+        "name": "Microsoft Surface Laptop 4",
+        "brand": "Microsoft",
+        "photo": "https://i.ibb.co/0fpjhRF/download-3.jpg",
+        "p_type": "Laptop",
+        "price": "1299.99",
+        "rating": "4.5",
+        "p_description": "A premium laptop from Microsoft."
+      }
+    ]
+
+  

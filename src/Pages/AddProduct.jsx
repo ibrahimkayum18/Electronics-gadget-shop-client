@@ -31,6 +31,7 @@ const AddProduct = () => {
     .then(result => result.json())
     .then(data => {
         console.log('check data', data);
+        form.reset()
     })
 
   };
