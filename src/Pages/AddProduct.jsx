@@ -1,3 +1,5 @@
+import toast from "react-hot-toast";
+
 const AddProduct = () => {
   const handleAddProduct = (e) => {
     e.preventDefault();
@@ -31,13 +33,14 @@ const AddProduct = () => {
     .then(result => result.json())
     .then(data => {
         console.log('check data', data);
+        toast.success('Product Added Successfully')
         form.reset()
     })
 
   };
 
   return (
-    <div className="bg-gradient-to-r from-indigo-500 w-full h-full py-12">
+    <div className="bg-sky-100 w-full h-full py-12 dark:bg-zinc-800 dark:text-white">
       <form
         onSubmit={handleAddProduct}
         className="space-y-5 w-[90%] lg:w-[70%]  mx-auto p-10 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"

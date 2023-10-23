@@ -51,7 +51,7 @@ const Update = () => {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-indigo-500 w-full h-full py-12">
+      <div className="dark:bg-zinc-800 dark:text-white bg-sky-100 w-full h-full py-12">
         <form onSubmit={handleUpdate} className="space-y-5 w-[90%] lg:w-[70%]  mx-auto p-10 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           <div>
             <h2 className="text-center text-4xl font-bold text-white">
@@ -66,7 +66,7 @@ const Update = () => {
               </label>
               <br />
               <input
-                className="py-3 px-5 rounded-lg w-full mt-3"
+                className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
                 placeholder="Product Name..."
                 type="text"
                 defaultValue={name}
@@ -74,13 +74,13 @@ const Update = () => {
               />
             </div>
             <div className="w-full">
-              <label className="text-xl font-semibold pb-3 text-white">
+              <label className="text-xl font-semibold pb-3 text-white ">
                 {" "}
                 Brand{" "}
               </label>
               <br />
               <input
-                className="py-3 px-5 rounded-lg w-full mt-3"
+                className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
                 placeholder="Brand Name..."
                 type="text"
                 defaultValue={brand}
@@ -96,7 +96,7 @@ const Update = () => {
               </label>
               <br />
               <input
-                className="py-3 px-5 rounded-lg w-full mt-3"
+                className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
                 placeholder="Product Image Link..."
                 type="text"
                 defaultValue={photo}
@@ -111,7 +111,7 @@ const Update = () => {
               <br />
               <select
                 name="p_type"
-                className="py-3 px-5 rounded-lg w-full mt-3"
+                className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
               >
                 <option value="Technology and Electronics">
                   Technology and Electronics
@@ -130,7 +130,7 @@ const Update = () => {
               </label>
               <br />
               <input
-                className="py-3 px-5 rounded-lg w-full mt-3"
+                className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
                 placeholder="Price..."
                 type="text"
                 defaultValue={price}
@@ -144,7 +144,7 @@ const Update = () => {
               </label>
               <br />
               <input
-                className="py-3 px-5 rounded-lg w-full mt-3"
+                className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
                 placeholder="Rating..."
                 type="text"
                 defaultValue={rating}
@@ -159,7 +159,7 @@ const Update = () => {
             </label>
             <br />
             <input
-              className="py-3 px-5 rounded-lg w-full mt-3"
+              className="py-3 px-5 rounded-lg w-full mt-3 dark:bg-zinc-800 dark:text-white"
               placeholder="Description..."
               type="text"
               defaultValue={p_description}

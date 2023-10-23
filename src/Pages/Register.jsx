@@ -39,7 +39,7 @@ const Register = () => {
         })
     }
   return (
-    <div className="pt-5  md:pt-8  lg:pt-14 pb-5  md:pb-8  lg:pb-14 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+    <div className="pt-5  md:pt-8  lg:pt-14 pb-5  md:pb-8  lg:pb-14 bg-sky-100 dark:bg-zinc-800 dark:text-white">
       <div className="space-y-7 w-[90%] md:w-[70%] lg:w-[50%] mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-10 rounded-lg">
         <h2 className="text-5xl text-center font-bold mb-10">
           Please Register
@@ -52,7 +52,7 @@ const Register = () => {
               name="name"
               required
               placeholder="Your name..."
-              className="w-full rounded-lg py-3 bg-gray-300 px-5"
+              className="w-full rounded-lg py-3 dark:bg-zinc-800 dark:text-white px-5"
             />
           </div>
           <div>
@@ -62,7 +62,7 @@ const Register = () => {
               name="photo"
               required
               placeholder="Your Photo URL..."
-              className="w-full rounded-lg py-3 bg-gray-300 px-5"
+              className="w-full rounded-lg py-3 dark:bg-zinc-800 dark:text-white px-5"
             />
           </div>
           <div>
@@ -72,7 +72,7 @@ const Register = () => {
               name="email"
               required
               placeholder="Your Email..."
-              className="w-full rounded-lg py-3 bg-gray-300 px-5"
+              className="w-full rounded-lg py-3 dark:bg-zinc-800 dark:text-white px-5"
             />
           </div>
           <div>
@@ -82,7 +82,7 @@ const Register = () => {
               name="password"
               required
               placeholder="Your Password..."
-              className="w-full rounded-lg py-3 bg-gray-300 px-5"
+              className="w-full rounded-lg py-3 dark:bg-zinc-800 dark:text-white px-5"
             />
           </div>
           <div>
