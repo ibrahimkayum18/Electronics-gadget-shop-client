@@ -5,7 +5,8 @@ import Banner from "../Components/Banner";
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
+            <h1>Git test</h1>
+            {/* <Banner></Banner> */}
             {/* <Banner2></Banner2> */}
         </div>
     );
