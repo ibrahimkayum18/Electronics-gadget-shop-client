@@ -29,7 +29,8 @@ const Route = createBrowserRouter([
             },
             {
                 path:'/mycart',
-                element:<PrivetRouter><MyCart></MyCart></PrivetRouter>
+                element:<PrivetRouter><MyCart></MyCart></PrivetRouter>,
+                loader: () => fetch('http://localhost:5000/cart')
             },
             {
                 path: '/login',
@@ -41,18 +42,18 @@ const Route = createBrowserRouter([
             },
             {
                 path: '/products/:brand',
-                element: <Products></Products>,
+                element: <PrivetRouter><Products></Products></PrivetRouter>,
                 loader: () => fetch('http://localhost:5000/shopifyProducts#')
             },
             {
                 path: '/seemore/:id',
-                element: <SeeMore></SeeMore>,
+                element: <PrivetRouter><SeeMore></SeeMore></PrivetRouter>,
                 loader: () => fetch('http://localhost:5000/shopifyProducts#')
             },
             {
                 path: '/update/:id',
-                element: <Update></Update>,
-                loader: () => fetch('http://localhost:5000/shopifyProducts#')
+                element: <PrivetRouter><Update></Update></PrivetRouter>,
+                loader: ({params}) => fetch(`http://localhost:5000/shopifyProducts#/${params.id}`)
             },
         ]
     }

@@ -1,24 +1,58 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const Update = () => {
-    const [product, setProduct] = useState([])
+  const [product, setProduct] = useState([]);
   const { id } = useParams();
   const AllData = useLoaderData();
-  console.log(AllData)
   const { name, _id, brand, photo, p_type, price, rating, p_description } =
     product || {};
 
-    useEffect(() => {
-        const mainData = AllData.find((data) => data._id === id);
-        setProduct(mainData);
-      }, []);
+  useEffect(() => {
+    const mainData = AllData.find((data) => data._id === id);
+    setProduct(mainData);
+  }, []);
 
+  const handleUpdate = e => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    // console.log(name);
+    const brand = form.brand.value;
+    const photo = form.photo.value;
+    const p_type = form.p_type.options[form.p_type.selectedIndex].value;
+    const price = form.price.value;
+    const rating = form.rating.value;
+    const p_description = form.p_description.value;
+    const addProduct = {
+      name,
+      brand,
+      photo,
+      p_type,
+      price,
+      rating,
+      p_description,
+    };
+
+    fetch(`http://localhost:5000/shopifyProducts/${_id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(addProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        toast.success('Product Updated Successfully')
+      })
+  };
 
   return (
     <div>
       <div className="bg-gradient-to-r from-indigo-500 w-full h-full py-12">
-        <form className="space-y-5 w-[90%] lg:w-[70%]  mx-auto p-10 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <form onSubmit={handleUpdate} className="space-y-5 w-[90%] lg:w-[70%]  mx-auto p-10 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           <div>
             <h2 className="text-center text-4xl font-bold text-white">
               Update Your Product
