@@ -21,7 +21,7 @@ const Route = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader: () => fetch("http://localhost:5000/shopifyProducts")
+                loader: () => fetch("https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts")
             },
             {
                 path:'/addproduct',
@@ -30,7 +30,7 @@ const Route = createBrowserRouter([
             {
                 path:'/mycart',
                 element:<PrivetRouter><MyCart></MyCart></PrivetRouter>,
-                loader: () => fetch('http://localhost:5000/cart')
+                loader: () => fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/cart')
             },
             {
                 path: '/login',
@@ -43,17 +43,17 @@ const Route = createBrowserRouter([
             {
                 path: '/products/:brand',
                 element: <PrivetRouter><Products></Products></PrivetRouter>,
-                loader: () => fetch('http://localhost:5000/shopifyProducts#')
+                loader: () => fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts#')
             },
             {
                 path: '/seemore/:id',
                 element: <PrivetRouter><SeeMore></SeeMore></PrivetRouter>,
-                loader: () => fetch('http://localhost:5000/shopifyProducts#')
+                loader: () => fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts#')
             },
             {
                 path: '/update/:id',
                 element: <PrivetRouter><Update></Update></PrivetRouter>,
-                loader: ({params}) => fetch(`http://localhost:5000/shopifyProducts#/${params.id}`)
+                loader: ({params}) => fetch(`https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts#/${params.id}`)
             },
         ]
     }

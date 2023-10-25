@@ -23,7 +23,7 @@ const AddProduct = () => {
     };
     console.log(addProduct);
 
-    fetch('http://localhost:5000/shopifyProducts', {
+    fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts', {
         method: "POST",
         headers: {
             'content-type': 'application/json'

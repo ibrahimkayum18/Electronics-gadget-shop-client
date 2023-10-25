@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const MarSl = () => {
   return (
-    <div className="py-14 ">
+    <div className="py-14 " data-aos="fade-up">
         <h2 className="text-4xl font-bold text-center mb-10">Todays Best Product</h2>
       <Marquee >
         <div className="mr-8">
