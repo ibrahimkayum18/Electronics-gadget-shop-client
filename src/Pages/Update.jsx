@@ -50,7 +50,7 @@ const Update = () => {
   };
 
   return (
-    <div>
+    <div  data-aos="fade-up">
       <div className="dark:bg-zinc-800 dark:text-white bg-sky-100 w-full h-full py-12">
         <form onSubmit={handleUpdate} className="space-y-5 w-[90%] lg:w-[70%]  mx-auto p-10 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           <div>

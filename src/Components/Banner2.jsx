@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function App() {
   return (
-    <>
+    <div data-aos="flip-left">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -79,6 +79,6 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

@@ -23,7 +23,7 @@ export default function App() {
             }}
             className=""
           >
-            <div
+            <div data-aos="fade-up"
               style={{ backgroundColor: "rgba(0,0,0,0.6)" }}
               className="h-full w-ful flex items-center justify-center gap-5 "
             >

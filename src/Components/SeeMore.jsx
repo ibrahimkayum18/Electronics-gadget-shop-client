@@ -55,7 +55,7 @@ const SeeMore = () => {
     //   <button className="btn bg-blue-700 text-white">Add To Cart -</button>
     // </div>
     // </div>
-    <div className="card lg:card-side bg-base-100 py-14 dark:bg-zinc-800 dark:text-white">
+    <div data-aos="fade-up" className="card lg:card-side bg-base-100 py-14 dark:bg-zinc-800 dark:text-white">
       <figure className="h-[400px]">
         <img className="h-full" src={photo} alt="Album" />
       </figure>

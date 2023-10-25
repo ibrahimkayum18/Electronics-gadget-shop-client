@@ -21,7 +21,7 @@ const AProduct = ({ aProduct }) => {
     //     </div>
     //   </div>
     // </div>
-    <div className="card glass ">
+    <div className="card glass " data-aos="flip-left">
       <figure>
         <img src={photo} alt="car!" />
       </figure>

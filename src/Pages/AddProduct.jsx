@@ -40,7 +40,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="bg-sky-100 w-full h-full py-12 dark:bg-zinc-800 dark:text-white">
+    <div  data-aos="fade-up" className="bg-sky-100 w-full h-full py-12 dark:bg-zinc-800 dark:text-white">
       <form
         onSubmit={handleAddProduct}
         className="space-y-5 w-[90%] lg:w-[70%]  mx-auto p-10 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"

@@ -19,7 +19,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="dark:bg-zinc-800 dark:text-white">
+    <div  data-aos="fade-up" className="dark:bg-zinc-800 dark:text-white">
         <Banner2></Banner2>
       <div>
         {

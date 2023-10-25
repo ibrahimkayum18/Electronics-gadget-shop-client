@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="dark:bg-zinc-800 dark:text-white">
+    <div className="dark:bg-zinc-800 dark:text-white" data-aos="flip-down">
       <footer className="footer p-10 ">
         <nav>
           <header className="footer-title">Services</header>

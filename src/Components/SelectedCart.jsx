@@ -5,7 +5,7 @@ const SelectedCart = ({product}) => {
     const { name, _id, brand, photo, p_type, price, rating, p_description } =
     product || {};
     return (
-        <div className="card  glass">
+        <div className="card  glass" data-aos="flip-left">
         <figure>
           <img src={photo} alt="car!" />
         </figure>

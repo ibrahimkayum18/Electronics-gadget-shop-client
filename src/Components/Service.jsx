@@ -2,7 +2,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const Service = () => {
   return (
-    <div className="md:grid grid-cols-2 justify-center items-center gap-5 bg-sky-100 dark:bg-zinc-800 dark:text-white p-10">
+    <div data-aos="fade-up" className="md:grid grid-cols-2 justify-center items-center gap-5 bg-sky-100 dark:bg-zinc-800 dark:text-white p-10">
       <div>
         <img
           className=" p-5 md:p-0 md:w-[50%] lg:w-[50%] rounded-lg mx-auto shadow-2xl"
