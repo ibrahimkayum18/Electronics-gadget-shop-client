@@ -35,7 +35,7 @@ const Update = () => {
       p_description,
     };
 
-    fetch(`https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts/${_id}`, {
+    fetch(`https://b8a10-brandshop-server-side-ibrahimkayum18-ca8vqnd5z.vercel.app/shopifyProducts/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

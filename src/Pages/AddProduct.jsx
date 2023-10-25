@@ -23,7 +23,7 @@ const AddProduct = () => {
     };
     console.log(addProduct);
 
-    fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/shopifyProducts', {
+    fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-ca8vqnd5z.vercel.app/shopifyProducts', {
         method: "POST",
         headers: {
             'content-type': 'application/json'

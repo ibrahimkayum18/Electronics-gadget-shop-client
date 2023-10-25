@@ -17,7 +17,7 @@ const SeeMore = () => {
   }, []);
 
   const handleAddToCart = () => {
-    fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-eztcs8re7.vercel.app/cart', {
+    fetch('https://b8a10-brandshop-server-side-ibrahimkayum18-ca8vqnd5z.vercel.app/cart', {
       method: "POST",
       headers: {
         'content-type': 'application/json'
