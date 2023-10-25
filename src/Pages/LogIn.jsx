@@ -66,7 +66,7 @@ const LogIn = () => {
             
           </div>
           <div className="text-center">
-          <button onClick={handleGoogleLogIn} className=" text-2xl font-bold  text-orange-500  rounded-lg"><img className="h-14  mx-auto rounded-xl" src="https://i.ibb.co/xg1JH1Q/download.png" alt="" /></button>
+          <button onClick={handleGoogleLogIn} className=" text-2xl font-bold  text-orange-500  rounded-lg"><img className="h-14 border-2 border-blue-400 mx-auto rounded-xl" src="https://i.ibb.co/x2HXX6D/google-logo.png" alt="" /></button>
           </div>
         </form>
       </div>
