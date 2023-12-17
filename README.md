@@ -1,8 +1,8 @@
-# React + Vite
+# Shopify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is an electronic gadget-purchasing website where you can buy or
+sell electronic gadgets. Project features where you can choose different brands of products
+- You can see details of every product
+- You can add products if you want
+- Firebase authentication added for security
+- Hyperlink: https://internal-car.surge.sh/
